@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ImageAvatarBuilder_Example' do
+  pod 'ImageAvatarBuilder', :path => '../'
+
+  target 'ImageAvatarBuilder_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
