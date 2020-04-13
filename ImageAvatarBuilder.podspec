@@ -25,6 +25,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '12.0'
 
-  s.source_files = 'Source/**/*.swift'
+  s.source_files = 'Source/*.{h,m,swift}'
   
 end
