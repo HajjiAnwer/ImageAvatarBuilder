@@ -1,0 +1,6 @@
+framework module Pods_ImageAvatarBuilder_Tests {
+  umbrella header "Pods-ImageAvatarBuilder_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

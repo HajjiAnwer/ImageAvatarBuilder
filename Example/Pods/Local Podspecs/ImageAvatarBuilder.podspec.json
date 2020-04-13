@@ -1,0 +1,22 @@
+{
+  "name": "ImageAvatarBuilder",
+  "version": "0.1.0",
+  "summary": "A short description of ImageAvatarBuilder.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/hajjiAnwer/ImageAvatarBuilder",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hajjiAnwer": "hanwer@tryspare.com"
+  },
+  "source": {
+    "git": "https://github.com/hajjiAnwer/ImageAvatarBuilder.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ImageAvatarBuilder/Classes/**/*"
+}

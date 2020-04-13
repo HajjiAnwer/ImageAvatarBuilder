@@ -1,0 +1,16 @@
+PODS:
+  - ImageAvatarBuilder (0.1.0)
+
+DEPENDENCIES:
+  - ImageAvatarBuilder (from `../`)
+
+EXTERNAL SOURCES:
+  ImageAvatarBuilder:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ImageAvatarBuilder: c08bbd46ae25fbc4585b072859b9f80e988d8609
+
+PODFILE CHECKSUM: 357161f92d14dcc5fc30722ec04c41e79c12d73d
+
+COCOAPODS: 1.9.1

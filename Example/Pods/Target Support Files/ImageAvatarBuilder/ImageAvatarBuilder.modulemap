@@ -1,0 +1,6 @@
+framework module ImageAvatarBuilder {
+  umbrella header "ImageAvatarBuilder-umbrella.h"
+
+  export *
+  module * { export * }
+}
