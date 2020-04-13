@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		260813633EE783C13EB7E835A0A7AD9E /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA24876DD90BE1AE3BE8A6DCB3D678A /* ReplaceMe.swift */; };
 		2CBACD3B71BD53277ABE21879D1243B7 /* ImageAvatarBuilder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 813A965C83F67551B8D6EAE004A3CAEF /* ImageAvatarBuilder-dummy.m */; };
 		641A95BE890D6A1EB51FF746D7EDA2A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		748B525CEC16CAF67E8B04B5FF9A76D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -16,6 +15,8 @@
 		C1D5553AF65D52B816A0DE5FD7EB6A5E /* ImageAvatarBuilder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CAC1915E088F00062642908EEDFA19D /* ImageAvatarBuilder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C31D0D96C2F23181EBB3840D71AA51CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		D91D62F451FB67C59106B4E48F98AF31 /* Pods-ImageAvatarBuilder_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 234AD775567D71666792BA0899B3A19F /* Pods-ImageAvatarBuilder_Tests-dummy.m */; };
+		F28161C62444ECEC004DBAD6 /* ImageBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28161C42444ECEC004DBAD6 /* ImageBuilderProtocol.swift */; };
+		F28161C72444ECEC004DBAD6 /* ImageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28161C52444ECEC004DBAD6 /* ImageBuilder.swift */; };
 		FC97582AB73B05A840A0E2F170FF37C1 /* Pods-ImageAvatarBuilder_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 678967F140A82480FA3EA6AEEA9E11A5 /* Pods-ImageAvatarBuilder_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -39,7 +40,7 @@
 /* Begin PBXFileReference section */
 		07867EF7905645211A82EFBAD6D1B07A /* ImageAvatarBuilder-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ImageAvatarBuilder-Info.plist"; sourceTree = "<group>"; };
 		0B02ED80CC887C6AB4E944B5BA411EAB /* Pods-ImageAvatarBuilder_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ImageAvatarBuilder_Example-umbrella.h"; sourceTree = "<group>"; };
-		20264FBDAC72EAFB7FA185AC32C9C345 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		20264FBDAC72EAFB7FA185AC32C9C345 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		234AD775567D71666792BA0899B3A19F /* Pods-ImageAvatarBuilder_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ImageAvatarBuilder_Tests-dummy.m"; sourceTree = "<group>"; };
 		259533B968C182BE0736E8F42BA78A88 /* Pods-ImageAvatarBuilder_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ImageAvatarBuilder_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2BA0CE10BEC46DEB38E46A3B2CC3855C /* Pods-ImageAvatarBuilder_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ImageAvatarBuilder_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -49,26 +50,27 @@
 		56250C4FBAB92D43266143ACE9205839 /* ImageAvatarBuilder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ImageAvatarBuilder.release.xcconfig; sourceTree = "<group>"; };
 		61EEC8E28F3CD4B5D1DCDB7B917C28FE /* ImageAvatarBuilder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageAvatarBuilder-prefix.pch"; sourceTree = "<group>"; };
 		63F8C84B3D75410AAFF024408E2FF8FD /* Pods-ImageAvatarBuilder_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ImageAvatarBuilder_Example-dummy.m"; sourceTree = "<group>"; };
-		643F35951CA46F797F84BCE8087917BE /* ImageAvatarBuilder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ImageAvatarBuilder.framework; path = ImageAvatarBuilder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		643F35951CA46F797F84BCE8087917BE /* ImageAvatarBuilder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageAvatarBuilder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E74D57EE99C323D3B5697CBE5AA736 /* Pods-ImageAvatarBuilder_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ImageAvatarBuilder_Example.modulemap"; sourceTree = "<group>"; };
 		67065C8477B57AB692257EBD5BF836EC /* Pods-ImageAvatarBuilder_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ImageAvatarBuilder_Tests.modulemap"; sourceTree = "<group>"; };
 		678967F140A82480FA3EA6AEEA9E11A5 /* Pods-ImageAvatarBuilder_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ImageAvatarBuilder_Tests-umbrella.h"; sourceTree = "<group>"; };
-		76D63F1527BE9A85A16610FCC452A798 /* ImageAvatarBuilder.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ImageAvatarBuilder.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		76D63F1527BE9A85A16610FCC452A798 /* ImageAvatarBuilder.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ImageAvatarBuilder.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7CAC1915E088F00062642908EEDFA19D /* ImageAvatarBuilder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageAvatarBuilder-umbrella.h"; sourceTree = "<group>"; };
 		813A965C83F67551B8D6EAE004A3CAEF /* ImageAvatarBuilder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ImageAvatarBuilder-dummy.m"; sourceTree = "<group>"; };
 		817F33DDC834DE912A1E1F4ED3766377 /* Pods-ImageAvatarBuilder_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ImageAvatarBuilder_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		842C9A0C727D9F92187363B476FA096B /* Pods-ImageAvatarBuilder_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ImageAvatarBuilder_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A8C9977A99157C97EADD2D3ED6224A8E /* Pods-ImageAvatarBuilder_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ImageAvatarBuilder_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B7D7DD0F09316C565DC2476C7C80CF1D /* Pods-ImageAvatarBuilder_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ImageAvatarBuilder_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		BAA24876DD90BE1AE3BE8A6DCB3D678A /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ImageAvatarBuilder/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		C256919C37141115D780B053760742C4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		C2B8A2E2F106FB22908D72E45E13A8BF /* Pods_ImageAvatarBuilder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ImageAvatarBuilder_Example.framework; path = "Pods-ImageAvatarBuilder_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C256919C37141115D780B053760742C4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C2B8A2E2F106FB22908D72E45E13A8BF /* Pods_ImageAvatarBuilder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageAvatarBuilder_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C53C70BA2488C17C4EDED835953F37BE /* Pods-ImageAvatarBuilder_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ImageAvatarBuilder_Tests-Info.plist"; sourceTree = "<group>"; };
 		C78D89EE226DCA2B50F389D9EF0906B6 /* Pods-ImageAvatarBuilder_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ImageAvatarBuilder_Example-frameworks.sh"; sourceTree = "<group>"; };
-		CFEE19974AE581353EFCADDD691F4C3C /* Pods_ImageAvatarBuilder_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ImageAvatarBuilder_Tests.framework; path = "Pods-ImageAvatarBuilder_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFEE19974AE581353EFCADDD691F4C3C /* Pods_ImageAvatarBuilder_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageAvatarBuilder_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E65660D58780B01741FB938F9CFDE8DF /* Pods-ImageAvatarBuilder_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ImageAvatarBuilder_Example-Info.plist"; sourceTree = "<group>"; };
 		EBB65C013CFD758FCCFCCE2458145E77 /* Pods-ImageAvatarBuilder_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ImageAvatarBuilder_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F28161C42444ECEC004DBAD6 /* ImageBuilderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageBuilderProtocol.swift; path = ../../../ImageBuilding/ImageBuilding/ImageBuilding/ImageBuilderProtocol.swift; sourceTree = "<group>"; };
+		F28161C52444ECEC004DBAD6 /* ImageBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageBuilder.swift; path = ../../../ImageBuilding/ImageBuilding/ImageBuilding/ImageBuilder.swift; sourceTree = "<group>"; };
 		F643BCBB185CAB7DB27400239E7FFB17 /* ImageAvatarBuilder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ImageAvatarBuilder.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,7 +129,7 @@
 		6D62850174FC2780A5A9399B8CD9236F /* ImageAvatarBuilder */ = {
 			isa = PBXGroup;
 			children = (
-				BAA24876DD90BE1AE3BE8A6DCB3D678A /* ReplaceMe.swift */,
+				F275A0F02444ECA800F34759 /* Source */,
 				AE9EACD3D254069409515749B859AAF3 /* Pod */,
 				23A0CDE049B5889DCF4A8F29CE8CAB3B /* Support Files */,
 			);
@@ -205,6 +207,15 @@
 			);
 			name = "Pods-ImageAvatarBuilder_Example";
 			path = "Target Support Files/Pods-ImageAvatarBuilder_Example";
+			sourceTree = "<group>";
+		};
+		F275A0F02444ECA800F34759 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F28161C52444ECEC004DBAD6 /* ImageBuilder.swift */,
+				F28161C42444ECEC004DBAD6 /* ImageBuilderProtocol.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		F4AED13A20D23FB18DDCD58FCFD45F11 /* Pods-ImageAvatarBuilder_Tests */ = {
@@ -317,6 +328,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					31FFA723E759A47A70EA5FB5BE7D78EB = {
+						LastSwiftMigration = 1140;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -384,7 +400,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CBACD3B71BD53277ABE21879D1243B7 /* ImageAvatarBuilder-dummy.m in Sources */,
-				260813633EE783C13EB7E835A0A7AD9E /* ReplaceMe.swift in Sources */,
+				F28161C72444ECEC004DBAD6 /* ImageBuilder.swift in Sources */,
+				F28161C62444ECEC004DBAD6 /* ImageBuilderProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +439,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ImageAvatarBuilder_Example/Pods-ImageAvatarBuilder_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ImageAvatarBuilder_Example/Pods-ImageAvatarBuilder_Example.modulemap";
@@ -456,7 +473,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ImageAvatarBuilder_Tests/Pods-ImageAvatarBuilder_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ImageAvatarBuilder_Tests/Pods-ImageAvatarBuilder_Tests.modulemap";
@@ -477,6 +494,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 54B44D6C98216528F485C29CAA0ECF56 /* ImageAvatarBuilder.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -489,7 +507,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ImageAvatarBuilder/ImageAvatarBuilder-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ImageAvatarBuilder/ImageAvatarBuilder-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ImageAvatarBuilder/ImageAvatarBuilder.modulemap";
 				PRODUCT_MODULE_NAME = ImageAvatarBuilder;
@@ -497,7 +515,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -552,13 +571,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -615,7 +633,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -644,7 +662,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ImageAvatarBuilder_Tests/Pods-ImageAvatarBuilder_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ImageAvatarBuilder_Tests/Pods-ImageAvatarBuilder_Tests.modulemap";
@@ -666,6 +684,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 56250C4FBAB92D43266143ACE9205839 /* ImageAvatarBuilder.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -678,7 +697,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ImageAvatarBuilder/ImageAvatarBuilder-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ImageAvatarBuilder/ImageAvatarBuilder-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ImageAvatarBuilder/ImageAvatarBuilder.modulemap";
 				PRODUCT_MODULE_NAME = ImageAvatarBuilder;
@@ -686,7 +705,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -710,7 +729,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ImageAvatarBuilder_Example/Pods-ImageAvatarBuilder_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ImageAvatarBuilder_Example/Pods-ImageAvatarBuilder_Example.modulemap";

@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import ImageAvatarBuilder
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var viewImage: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let avatarImage = ImageBuilder.init(view: viewImage)
+        viewImage = avatarImage.circularView().border().shadow().build()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
